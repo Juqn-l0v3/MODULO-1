@@ -1,339 +1,121 @@
-body {
-  width: 100%;
-  margin: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body>* {
-  margin: 0 2rem;
+header>section {
+    background-image: url(./img/banner.webp);
+    width: 1349px;
+    height: 600px;
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 28px 74px;
 }
 
-/*Style of the  logo of 'RIWIFLIX'. */
+header>section>div>nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 0 10px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200px;
+    padding-right: 10px;
+    gap: 5px;
+}
+
 .letter {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 45px;
-  color: #552297;
-  text-shadow:
-    1px 1px 0 #ffffff,
-    -1px 1px 0 #ffffff,
-    -1px -1px 0 #ffffff,
-    1px -1px 0 #ffffff;
-  margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 48px;
+    color: white;
+    font-weight: 200;
 }
 
-/* Page Background. */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./img/breakingbad.jpg);
-  background-repeat: no-repeat;
-  background-size: 130%;
-  background-position: center;
-  z-index: -1;
-  animation: changebackground 10s infinite ease-in-out;
-
+section>div>h1>span {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
+.sub {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 26px;
+    color:white;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 145px 0;
+    line-height: 1.4;
+} 
 
+.paragraph {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 
-body>section:first-child {
-  display: inline-flex;
-  gap: 50px;
-}
-
-/* Brand logo and date. */
-.logo {
-  height: 200px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: center;
-  margin: 0;
-}
-
-.logo>div {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.change {
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
 }
 
 .letter1 {
-  font-family: "Kranky", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #C8C8C8;
-  margin-top: 20px;
-  border-left: 4px solid #fff;
-  padding-left: 10px;
-}
-
-body>img {
-  display: inline-flex;
-  margin-left: -255px;
-}
-
-.letter2 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100px;
-  font-style: normal;
-  font-size: 32px;
-  color: #FFFFFF;
-  word-spacing: 15px;
-}
-
-/* Series name. */
-body>main>h1 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 650;
-  font-style: normal;
-  font-size: 64px;
-  color: #FFFFFF;
-  margin-top: 10px;
-}
-
-.letter4 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 360;
-  font-style: normal;
-  font-size: 32px;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.span {
-  color: #A7A6A6;
-  margin-left: 10px;
-  font-size: 24px;
-}
-
-/* Style of description of the serie. */
-section>p {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  color: #DAD6D6;
-  max-width: 790px;
-  margin-top: 20px;
-  line-height: 1.5;
-}
-
-/* Style of the stars.*/
-.stars {
-  color: #FFEA2B;
-  font-size: 30px;
-  word-spacing: 10px;
-
-}
-
-.star {
-  color: white;
-}
-
-/* style of the button. */
-.button {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 28px;
-  color: #FFFFFF;
-  margin-right: 0;
-  padding: 15px 20px;
-  background-color: #552297;
-  border-radius: 8px;
-  margin-top: 45px;
-  border: none;
-  cursor: pointer;
-}
-
-.button1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 28px;
-  color: #FFFFFF;
-  margin-left: 45px;
-  padding: 12px 25px;
-  background-color: transparent;
-  border: white 2px solid;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-main>span>h2 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 24px;
-  color: #FFFFFF;
-  margin-top: 45px;
-  letter-spacing: 2.5px;
-}
-
-/* style of the arrows. */
-.arrows {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  vertical-align: middle;
-  margin-left: 900px;
-  margin-top: -60px;
-}
-
-.arrows i {
-  color: #FFFFFF;
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  border: 2px solid white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.arrows i:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.img-container>img {
-  width: 200px;
-  height: 270px;
-  border: 2px solid white;
-  border-radius: 0;
-}
-
-.glass {
-  width: 30px;
-  height: auto;
-  display: flex;
-  justify-content: end;
-}
-
-/* logo profile. */
-.fem {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  font-size: 32px;
-  cursor: pointer;
-  color: white;
-  gap: 40px;
-}
-
-.fem1 {
-  width: 60px;
-  height: 90px;
-  position: relative;
-  overflow: hidden;
-  clip-path: path("M30 0 C46 0 60 20 60 40 C60 65 30 90 30 90 C30 90 0 65 0 40 C0 20 14 0 30 0 Z");
-  border: 3px solid white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-.imagens {
-  position: absolute;
-  width: 100px;
-  height: 100%;
-  left: -20px;
-  top: 0;
-  object-fit: cover;
-}
-
-.lupe {
-  margin-right: 5px;
-}
-
-/* image conteiner. */
-.img-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 15px;
-  margin: 20px;
-
-}
-
-/* notice for adults. */
-.label {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background: rgba(255, 255, 255, 0.4);
-  padding: 5px 10px;
-  padding-left: 25px;
-  color: white;
-  font-size: 24px;
-  border-radius: 3px;
-}
-
-.label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 15px;
-  height: 100%;
-  background: purple;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-/* background animation. */
-@keyframes changebackground {
-  15% {
-    background-image: url(./img/stranger.jpg);
-    opacity: 0.7;
-  }
-
-  30% {
-    background-image: url(./img/stranger.jpg);
-    opacity: 1;
-  }
-
-  65% {
-    opacity: 0.7;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .fem {
-
-  }
-
-  
-}
-@media (min-width: 800px) {
-  .fem1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+    font-size: 32px;
     display: flex;
-    justify-content: flex-end;
-  }
+    flex-direction: row;
 }
+
+main {
+    margin-left: 100px;
+}
+
+.blog1 {
+    width: 700px;
+    height: 500px;
+}
+
+.blog2 {
+    width: 700px;
+    height: 500px;
+}
+
+.blog3 {
+    width: 700px;
+    height: 500px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4 auto;
+}
+
+.itemgrid1 {
+    grid-column: 1 / 2 ;
+    max-width: 100%;
+    max-height: 100%;
+    gap: 10px;
+}
+
+
+
 
 
